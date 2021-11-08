@@ -1,0 +1,54 @@
+<h1>Exemplos</h1>
+<h2>Binding de duas Vias</h2>
+
+<input type="text" [(ngModel)]="nome" >
+
+<br><br>
+
+<button (click)= "limpar()">Limpar</button>
+
+<br><br>
+
+Nome: {{nome}}
+
+<hr>
+
+<h2>Binding de 2 Vias em Selects</h2>
+<select [(ngModel)]="cidade">
+  <option value="saopaulo">São Paulo</option>
+  <option value="santos">Santos</option>
+  <option value="campinas">Campinas</option>
+  <option value="sorocada">Sorocaba</option>
+</select>
+
+<br><br>
+
+Cidade Selecionada: {{cidade}}
+
+<hr>
+<h2>Binding de duas vias em CheckBox</h2>
+
+<h4>Preferencia de contato</h4>
+<input id="email" type="checkbox" [(ngModel)]="prefEmail">
+<label for="email">Enviar Email</label>
+
+<input id="telefone" type="checkbox" [(ngModel)]="prefTel">
+<label for="telefone">Falar por Telefone</label>
+
+<p>Email: {{prefEmail}}</p>
+<p>Telefone: {{prefTel}}</p>
+
+<h2>Binding 2 Vias Radio</h2>
+<input type="radio" id="masc" value="masc" [(ngModel)]="genero">
+<label for="masc">Masculino</label>
+
+<input type="radio" id="fem" value="fem" [(ngModel)]="genero">
+<label for="fem">Feminino</label>
+
+<input type="radio" id="out" value="out" [(ngModel)]="genero">
+<label for="out">Outro</label>
+
+<br><br>
+
+Gênero: {{genero}}
+<hr>

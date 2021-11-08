@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aula05';
+  componenteAtual='exemplo01';
+
+  trocarComponente(comp:string){
+    this.componenteAtual = comp;
+  }
 }

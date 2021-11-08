@@ -1,0 +1,15 @@
+<h2>Exercicio 03</h2>
+
+<input type="text" id="nome" [(ngModel)]="nome">
+<label for="nome"></label>
+
+<select name="cursos" id="cursos" [(ngModel)]="curso">
+  <option value="bsi">Sistemas de Informação</option>
+  <option value="ads">Análise e desenvolvimento de sistemas</option>
+  <option value="sociologia">Sociologia</option>
+</select>
+
+<br><br>
+<hr>
+<p>Nome: {{nome}}</p>
+<p>Curso Escolhido: {{curso}}</p>

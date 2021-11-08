@@ -1,0 +1,7 @@
+<h1>Exercicio 02 - Aula 05</h1>
+
+<input type="text" [(ngModel)] = "imagem">
+
+<br><br>
+
+<img *ngIf="imagem==='husky' || imagem==='pastoralemao' || imagem==='labrador' " src="/assets/{{imagem | lowercase}}.jpg" alt="" width="300px" height="300px">
